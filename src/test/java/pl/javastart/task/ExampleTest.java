@@ -1,6 +1,7 @@
+package pl.javastart.task;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 import java.io.*;
@@ -17,7 +18,7 @@ public class ExampleTest {
     private final InputStream originalIn = System.in;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    void shouldWorkFrom1To3() {
+    void shouldDoSth() {
         // given
         // provideInput("1", "2", "3", "-12");
 
@@ -40,6 +41,7 @@ public class ExampleTest {
 
     private void provideInput(String... lines) {
         String input = String.join("\r\n", lines);
+        input += "\r\n";
 
         ByteArrayInputStream testIn = new ByteArrayInputStream(input.getBytes());
         System.setIn(testIn);
