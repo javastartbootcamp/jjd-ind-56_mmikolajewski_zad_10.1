@@ -11,7 +11,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 13
+          java-version: 15
       - name: Build with Maven
         run: mvn test -B -Dmaven.test.failure.ignore=true
       - name: Publish Test Report
