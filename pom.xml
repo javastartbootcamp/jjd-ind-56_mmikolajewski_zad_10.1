@@ -17,9 +17,8 @@
     <parent>
         <groupId>pl.javastart</groupId>
         <artifactId>task-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.17.0</version>
         <relativePath/>
     </parent>
-
 
 </project>
